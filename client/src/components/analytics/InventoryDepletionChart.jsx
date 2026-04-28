@@ -26,12 +26,12 @@ export function InventoryDepletionChart() {
               <AreaChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <defs>
                   <linearGradient id="colorStock" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3}/>
-                    <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0}/>
+                    <stop offset="5%" stopColor="#34d399" stopOpacity={0.4}/>
+                    <stop offset="95%" stopColor="#34d399" stopOpacity={0}/>
                   </linearGradient>
                   <linearGradient id="colorBuffer" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="hsl(var(--destructive))" stopOpacity={0.3}/>
-                    <stop offset="95%" stopColor="hsl(var(--destructive))" stopOpacity={0}/>
+                    <stop offset="5%" stopColor="#f87171" stopOpacity={0.4}/>
+                    <stop offset="95%" stopColor="#f87171" stopOpacity={0}/>
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" />
@@ -40,8 +40,8 @@ export function InventoryDepletionChart() {
                 <Tooltip 
                   contentStyle={{ backgroundColor: "hsl(var(--card))", borderColor: "hsl(var(--border))", borderRadius: "8px" }}
                 />
-                <Area type="monotone" dataKey="stock" name="Predicted Stock" stroke="hsl(var(--primary))" fillOpacity={1} fill="url(#colorStock)" strokeWidth={2} />
-                <Area type="monotone" dataKey="buffer" name="Critical Buffer" stroke="hsl(var(--destructive))" fillOpacity={1} fill="url(#colorBuffer)" strokeWidth={2} strokeDasharray="3 3" />
+                <Area type="monotone" dataKey="stock" name="Predicted Stock" stroke="#34d399" fillOpacity={1} fill="url(#colorStock)" strokeWidth={2} />
+                <Area type="monotone" dataKey="buffer" name="Critical Buffer" stroke="#f87171" fillOpacity={1} fill="url(#colorBuffer)" strokeWidth={2} strokeDasharray="3 3" />
               </AreaChart>
             </ResponsiveContainer>
           </div>

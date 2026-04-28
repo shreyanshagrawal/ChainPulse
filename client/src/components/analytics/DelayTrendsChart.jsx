@@ -31,8 +31,8 @@ export function DelayTrendsChart() {
                   contentStyle={{ backgroundColor: "hsl(var(--card))", borderColor: "hsl(var(--border))", borderRadius: "8px" }}
                   itemStyle={{ color: "hsl(var(--foreground))" }}
                 />
-                <Line type="monotone" dataKey="probability" name="AI Forecast" stroke="hsl(var(--primary))" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
-                <Line type="monotone" dataKey="historical" name="Historical Avg" stroke="hsl(var(--muted-foreground))" strokeWidth={2} strokeDasharray="5 5" dot={false} />
+                <Line type="monotone" dataKey="probability" name="AI Forecast" stroke="#a78bfa" strokeWidth={3} dot={{ r: 4, fill: "#a78bfa" }} activeDot={{ r: 6 }} />
+                <Line type="monotone" dataKey="historical" name="Historical Avg" stroke="#94a3b8" strokeWidth={2} strokeDasharray="5 5" dot={false} />
               </LineChart>
             </ResponsiveContainer>
           </div>

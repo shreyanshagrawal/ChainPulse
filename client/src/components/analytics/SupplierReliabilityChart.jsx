@@ -28,8 +28,8 @@ export function SupplierReliabilityChart() {
                 <Tooltip 
                   contentStyle={{ backgroundColor: "hsl(var(--card))", borderColor: "hsl(var(--border))", borderRadius: "8px" }}
                 />
-                <Radar name="Alpha Logistics" dataKey="Alpha" stroke="hsl(var(--primary))" fill="hsl(var(--primary))" fillOpacity={0.4} />
-                <Radar name="North Freight" dataKey="North" stroke="hsl(var(--destructive))" fill="hsl(var(--destructive))" fillOpacity={0.4} />
+                <Radar name="Alpha Logistics" dataKey="Alpha" stroke="#34d399" fill="#34d399" fillOpacity={0.25} />
+                <Radar name="North Freight" dataKey="North" stroke="#f87171" fill="#f87171" fillOpacity={0.25} />
               </RadarChart>
             </ResponsiveContainer>
           </div>

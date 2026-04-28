@@ -3,11 +3,11 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { motion } from "framer-motion";
 
 const data = [
-  { name: "Weather", events: 24, color: "hsl(var(--blue-500))" },
-  { name: "Traffic", events: 45, color: "hsl(var(--amber-500))" },
-  { name: "Customs", events: 18, color: "hsl(var(--purple-500))" },
-  { name: "Port Strike", events: 8, color: "hsl(var(--destructive))" },
-  { name: "Shortage", events: 12, color: "hsl(var(--emerald-500))" },
+  { name: "Weather", events: 24, color: "#38bdf8" },     // sky blue
+  { name: "Traffic", events: 45, color: "#fb923c" },     // orange
+  { name: "Customs", events: 18, color: "#a78bfa" },     // violet
+  { name: "Port Strike", events: 8, color: "#f87171" },  // red
+  { name: "Shortage", events: 12, color: "#34d399" },    // emerald
 ];
 
 export function DisruptionFrequencyChart() {
